@@ -76,6 +76,7 @@ Now, we're going to look deeper into Amara's maintenance. The first thing to do 
 ```cql
 scenario_id="EHS-SIA-SIM-003" user_name="aokafor"
 | sort(field=@timestamp, order=asc, limit=2000)
+| table([@timestamp, event_id, user_name, src_ip, asset_name, session_id, action, outcome, process_name, change_reference])
 ```
 
 This gives us a clear view of two relevant events by aokafor. One is a login event coming from 10.20.1.23, which is her assigned IP address on file. The second is an event on EHS-IT-WS01 (our Windows IT service asset) using the change reference CHG-EHS-014, which is our Helpdesk Maintenance authorized for aokafor in our approved changes list. EHS-IT-WS01 appears to be performing inventory maintenance on aokafor, and is utilizing the program inventory_agent.exe to do so.
