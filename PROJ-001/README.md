@@ -1,6 +1,8 @@
 # EHS-SIA-PROJ-001 Investigation Triage Report
 **Investigation Time Window:** `2026/10/06 14:00:00.000` to `2026/10/06 14:30:00.000`
 
+This is my first completely unguided investigation within the cyber range, where I crafted my own queries and workflow armed with only the `scenario_id` and time range to work with. Below is the detailed triage report analyzing the anomalous activity detected on billing workstation `EHS-WS-01`.
+
 ---
 
 ## Environment Overview: Ellington Health Systems
